@@ -13,7 +13,7 @@ h1 {
   line-height: 1.1;
   font-family: "Volkhov", serif;
   margin: 0;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
   line-height: 1.1;
   font-family: "Volkhov", serif;
   margin: 0;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h3 {
@@ -31,7 +31,7 @@ h3 {
   line-height: 1.1;
   font-family: "Volkhov", serif;
   margin: 0;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h4 {
@@ -40,7 +40,7 @@ h4 {
   line-height: 1.1;
   font-family: "Volkhov", serif;
   margin: 0;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h5 {
@@ -49,7 +49,7 @@ h5 {
   line-height: 1.1;
   font-family: "Volkhov", serif;
   margin: 0;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h6 {
@@ -58,11 +58,11 @@ h6 {
   line-height: 1.1;
   font-family: "Volkhov", serif;
   margin: 0;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 p {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .text-bold {
@@ -164,9 +164,9 @@ li {
   margin: 15rem 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .main-content {
-    margin: 5rem 0;
+    margin: 4em 0;
   }
   .main-content h5 {
     font-size: 1rem;
@@ -182,12 +182,18 @@ li {
   }
 }
 .header {
-  height: 6.25em;
+  height: 5.25em;
   display: flex;
   align-items: center;
+  margin: 1em 0;
+}
+
+.burger-menu {
+  padding-right: 1em;
 }
 
 .logo {
+  white-space: nowrap;
   font-size: 1.5625rem;
   font-weight: bold;
   line-height: 1.1;
@@ -196,18 +202,14 @@ li {
   margin-right: 1.5em;
 }
 
-.header h4 {
-  margin-right: 1em;
-}
-
 .nav-menu__link:hover {
   text-decoration: underline solid 2px;
   text-underline-offset: 0.1em;
   text-decoration-thickness: 0.125em;
 }
 
-.burger-menu {
-  margin-right: 1em;
+.nav-menu__list > :last-child {
+  margin: 0;
 }
 
 .nav-menu__item {
@@ -259,10 +261,17 @@ li {
     margin-right: 1.25rem;
   }
 }
+@media screen and (max-width: 315px) {
+  .header-row {
+    margin-bottom: 1rem;
+  }
+}
 .banner {
   background: url(../images/content/banner.jpg), #263041;
+  position: absolute;
   width: 100%;
   background-size: cover;
+  background-position: center;
 }
 .banner__content {
   text-align: center;
