@@ -1,0 +1,12 @@
+$color-main: #EAF1F4;
+$color-secondary: #263041;
+$color-main-dark: darken($color-main, 10%);
+$color-main-light: lighten($color-main, 10%);
+$color-dark: #242222;
+$color-white: #ffffff;
+$color-error: #f44336;
+$color-success: #0f834d;
+$color-warning: #fff4dd;
+$color-border: rgba($color-main-dark, .25);
+$color-accent: lighten($color-secondary, 10%);
+

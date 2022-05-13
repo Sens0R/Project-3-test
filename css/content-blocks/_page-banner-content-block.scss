@@ -1,0 +1,10 @@
+.banner {
+  background: url(../images/content/banner.jpg), $color-secondary;
+  width: 100%;
+  background-size: cover;
+  &__content {
+    text-align: center;
+  }
+}
+
+
