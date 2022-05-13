@@ -198,8 +198,7 @@ li {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin-right: 1.5em;
+  padding-right: 1.5em;
 }
 
 .nav-menu__link:hover {
