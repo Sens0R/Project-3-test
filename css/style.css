@@ -171,20 +171,24 @@ li {
     padding-bottom: 4em;
   }
 }
-@media screen and (max-width: 500px) {
-  .main-content h5 {
+@media screen and (max-width: 375px) {
+  h5 {
     font-size: 1rem;
   }
-  .main-content h2 {
+
+  h2 {
     font-size: 2rem;
   }
-  .main-content h1 {
+
+  h1 {
     font-size: 2rem;
   }
-  .main-content p {
+
+  p {
     font-size: 0.75rem;
   }
-  .main-content .btn {
+
+  .btn {
     font-size: 0.75rem;
   }
 }
@@ -281,7 +285,7 @@ li {
 }
 
 .about {
-  background: #EAF1F4;
+  background: #e9f9ff;
 }
 @media (max-width: 768px) {
   .about__text-content {
