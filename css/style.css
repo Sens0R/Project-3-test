@@ -228,7 +228,7 @@ li {
   border-bottom: 2px solid black;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .header {
     padding: 1em 0;
   }
@@ -252,11 +252,6 @@ li {
   }
   .nav-menu__item {
     margin-right: 1.25rem;
-  }
-}
-@media screen and (max-width: 315px) {
-  .header-row {
-    margin-bottom: 1rem;
   }
 }
 .banner {
