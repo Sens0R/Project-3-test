@@ -1,7 +1,17 @@
 .spacer-top {
-
+  padding-top: 8em;
 }
 
 .spacer-bottom {
+  padding-bottom: 8em;
+}
+
+@media screen and (max-width: 575px) {
+  .spacer-top {
+    padding-top: 4em;
+  }
   
+  .spacer-bottom {
+    padding-bottom: 4em;
+  }
 }

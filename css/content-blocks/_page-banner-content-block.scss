@@ -2,9 +2,7 @@
   background: url(../images/content/banner.jpg), $color-secondary;
   background-size: cover;
   background-position: center; 
-  &__content {
-    text-align: center;
-  }
+  text-align: center;
   min-height: 50em;
   @media screen and (max-width: 500px) {
     min-height: 30em;

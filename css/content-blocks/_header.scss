@@ -31,11 +31,10 @@
   margin-right: 1.875em;
 }
 
-.contact-btn {
+.phone-link {
   color: black;
   display: flex;
   align-items: center;
-  margin-right: 1.875rem;
   border: 2px solid transparent;
 
   &__phone-call-icon {
@@ -45,8 +44,12 @@
   }
 }
 
-.contact-btn:hover {
+.phone-link:hover {
   border-bottom: 2px solid black;
+}
+
+.contact-btn {
+  margin-left: 1.875em;
 }
 
 @media screen and (max-width: 575px) {
@@ -57,7 +60,6 @@
   .logo {
     font-size: 1rem;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -77,11 +79,9 @@
     &__list {
       font-size: 0.875rem;
     }
-
+    
     &__item {
       margin-right: 1.25rem;
     }
   }
 }
-
-

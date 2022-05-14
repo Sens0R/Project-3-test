@@ -12,8 +12,7 @@ h1 {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -21,8 +20,7 @@ h2 {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -30,8 +28,7 @@ h3 {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -39,8 +36,7 @@ h4 {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 h5 {
@@ -48,8 +44,7 @@ h5 {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 h6 {
@@ -57,12 +52,11 @@ h6 {
   font-weight: bold;
   line-height: 1.1;
   font-family: "Volkhov", serif;
-  margin: 0;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .text-bold {
@@ -160,13 +154,29 @@ li {
   color: black;
 }
 
-.main-content {
-  margin: 1em;
+.spacer-top {
+  padding-top: 8em;
 }
 
+.spacer-bottom {
+  padding-bottom: 8em;
+}
+
+@media screen and (max-width: 575px) {
+  .spacer-top {
+    padding-top: 4em;
+  }
+
+  .spacer-bottom {
+    padding-bottom: 4em;
+  }
+}
 @media screen and (max-width: 500px) {
   .main-content h5 {
     font-size: 1rem;
+  }
+  .main-content h2 {
+    font-size: 2rem;
   }
   .main-content h1 {
     font-size: 2rem;
@@ -211,21 +221,24 @@ li {
   margin-right: 1.875em;
 }
 
-.contact-btn {
+.phone-link {
   color: black;
   display: flex;
   align-items: center;
-  margin-right: 1.875rem;
   border: 2px solid transparent;
 }
-.contact-btn__phone-call-icon {
+.phone-link__phone-call-icon {
   font-size: 1.1em;
   font-weight: bold;
   margin-right: 0.325em;
 }
 
-.contact-btn:hover {
+.phone-link:hover {
   border-bottom: 2px solid black;
+}
+
+.contact-btn {
+  margin-left: 1.875em;
 }
 
 @media screen and (max-width: 575px) {
@@ -258,15 +271,27 @@ li {
   background: url(../images/content/banner.jpg), #263041;
   background-size: cover;
   background-position: center;
-  min-height: 50em;
-}
-.banner__content {
   text-align: center;
+  min-height: 50em;
 }
 @media screen and (max-width: 500px) {
   .banner {
     min-height: 30em;
   }
+}
+
+.about {
+  background: #EAF1F4;
+}
+@media (max-width: 768px) {
+  .about__text-content {
+    padding-top: 0;
+  }
+}
+.about img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */
