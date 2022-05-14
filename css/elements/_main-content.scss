@@ -1,11 +1,9 @@
 .main-content {
-  margin: 15rem 0;
+  margin: 1em;
 }
 
 @media screen and (max-width: 500px) {
   .main-content {
-    margin: 4em 0;
-    
     h5 {
       font-size: 1rem;
     }
@@ -13,12 +11,10 @@
       font-size: 2rem;
     }
     p {
-      font-size: .75rem;
+      font-size: 0.75rem;
     }
     .btn {
-      font-size: .75rem;
+      font-size: 0.75rem;
     }
   }
-
 }
-

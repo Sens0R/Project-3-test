@@ -1,13 +1,14 @@
 .banner {
   background: url(../images/content/banner.jpg), $color-secondary;
-  position: absolute;
-  width: 100%;
   background-size: cover;
   background-position: center; 
   &__content {
     text-align: center;
   }
-  
+  min-height: 50em;
+  @media screen and (max-width: 500px) {
+    min-height: 30em;
+  }
 }
 
 

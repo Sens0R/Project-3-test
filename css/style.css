@@ -161,13 +161,10 @@ li {
 }
 
 .main-content {
-  margin: 15rem 0;
+  margin: 1em;
 }
 
 @media screen and (max-width: 500px) {
-  .main-content {
-    margin: 4em 0;
-  }
   .main-content h5 {
     font-size: 1rem;
   }
@@ -182,10 +179,9 @@ li {
   }
 }
 .header {
-  height: 5.25em;
   display: flex;
   align-items: center;
-  margin: 1em 0;
+  padding: 1.75em 0;
 }
 
 .burger-menu {
@@ -219,28 +215,26 @@ li {
   color: black;
   display: flex;
   align-items: center;
+  margin-right: 1.875rem;
+  border: 2px solid transparent;
 }
 .contact-btn__phone-call-icon {
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: bold;
-  margin-right: 0.625em;
-}
-
-.contact-btn .btn {
-  margin-left: 1.875rem;
+  margin-right: 0.325em;
 }
 
 .contact-btn:hover {
-  color: #d32f2f;
+  border-bottom: 2px solid black;
 }
 
 @media screen and (max-width: 576px) {
-  .logo {
-    font-size: 1rem;
+  .header {
+    padding: 1em 0;
   }
 
-  .contact-btn__phone-call-icon {
-    margin-right: 0.25rem;
+  .logo {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -267,13 +261,17 @@ li {
 }
 .banner {
   background: url(../images/content/banner.jpg), #263041;
-  position: absolute;
-  width: 100%;
   background-size: cover;
   background-position: center;
+  min-height: 50em;
 }
 .banner__content {
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .banner {
+    min-height: 30em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
