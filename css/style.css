@@ -110,6 +110,10 @@ a:hover {
   text-overflow: uppercase;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .btn {
   color: white;
   background: #d32f2f;
@@ -317,6 +321,99 @@ li {
 .services__card p {
   margin: 0;
   padding-top: 1rem;
+}
+
+.testimonials {
+  background-image: url(../images/content/testimonials/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-nav__text {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.testimonials__content {
+  text-align: center;
+}
+
+.work-process {
+  background: #e9f9ff;
+}
+@media (max-width: 1199px) {
+  .work-process__text-content {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 575px) {
+  .work-process__text-content {
+    padding-top: 2rem;
+  }
+}
+.work-process img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.work-process__text-content ol {
+  padding: 1.25rem;
+  padding-right: 0;
+}
+.work-process__text-content li::marker {
+  font-weight: bold;
+}
+
+.faq__content h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.faq__content h5 {
+  margin: 0;
+  padding: 1.5rem 0;
+}
+.faq__content h5 img {
+  padding-right: 0.5em;
+}
+.faq__content h5:last-child {
+  border-bottom: none;
+}
+.faq__content .btn {
+  margin-top: 4rem;
+}
+
+.faq__item {
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+.faq__item p {
+  display: none;
+}
+
+.faq__item:hover {
+  cursor: pointer;
+}
+.faq__item:hover p {
+  display: block;
+}
+
+.item-last {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 575px) {
+  .faq__content h2 {
+    margin-bottom: 2rem;
+  }
+  .faq__content .btn {
+    margin-top: 2rem;
+  }
+}
+.contact-us {
+  background: url(../images/content/banner.jpg), #263041;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

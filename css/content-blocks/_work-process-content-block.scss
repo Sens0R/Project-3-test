@@ -1,0 +1,28 @@
+.work-process {
+  background: $color-main;
+  &__text-content {
+    @media (max-width: 1199px) {
+      padding-top: 4rem;
+    }
+    @media (max-width: 575px) {
+      padding-top: 2rem;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.work-process__text-content {
+  ol {
+    padding: 1.25rem;
+    padding-right: 0;
+  }
+
+  li::marker {
+    font-weight: bold;
+  }
+}
