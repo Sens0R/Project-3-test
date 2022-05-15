@@ -60,6 +60,26 @@ p {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 320px) {
+  h5 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  .btn {
+    font-size: 0.75rem;
+  }
+}
+
 .text-bold {
   font-weight: bold;
 }

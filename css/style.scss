@@ -6,22 +6,3 @@
 @import "content-blocks/import-content-blocks";
 
 
-@media screen and (max-width: 375px) {
-  h5 {
-    font-size: 1rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 0.75rem;
-  }
-  .btn {
-    font-size: 0.75rem;
-  }
-}
