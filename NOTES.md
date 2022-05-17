@@ -9,4 +9,4 @@ Roboto Bold
 Volkhov Bold
 
 
-sass --watch  Project-3-test/css/style.scss:Project-3-test/css/style.css
+sass --watch Project-3-test/css/style.scss:Project-3-test/css/style.css

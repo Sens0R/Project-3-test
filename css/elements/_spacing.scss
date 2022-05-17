@@ -2,8 +2,16 @@
   padding-top: 8rem;
 }
 
+.spacer-top-small {
+  padding-top: 4rem;
+}
+
 .spacer-bottom {
   padding-bottom: 8rem;
+}
+
+.spacer-bottom-small {
+  padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 575px) {
@@ -14,4 +22,13 @@
   .spacer-bottom {
     padding-bottom: 4rem;
   }
+
+  .spacer-top-small {
+    padding-top: 2rem;
+  }
+
+  .spacer-bottom-small {
+    padding-bottom: 2rem;
+  }
+  
 }

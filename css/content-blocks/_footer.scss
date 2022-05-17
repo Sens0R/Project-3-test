@@ -1,0 +1,32 @@
+.footer {
+  background: $color-secondary;
+  color: rgba(255, 255, 255, 0.6);
+  a {
+    color: white;
+  }
+}
+
+.footer-nav > li {
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.socials-item {
+  margin-bottom: 1.5rem;
+}
+
+.logo-list {
+  margin-top: 1rem;
+}
+.socials-logo {
+  padding: 1rem;
+}
+
+.socials-logo > img {
+  height: 20px;
+}
+
+.socials-item > p {
+  margin: 0;
+  font-weight: bold;;
+}
