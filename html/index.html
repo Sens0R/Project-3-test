@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
 
+    
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
@@ -37,24 +39,25 @@
                 width="25"
                 src="../images/icons/burger-menu.svg"
                 alt="Navigation menu"
+                class="burger-menu-icon"
               />
             </div>
             <div class="logo">Joseph Rose.</div>
           </div>
-          <div class="col-auto d-none d-lg-flex align-items-center">
+          <div class="col-auto d-lg-flex align-items-center">
             <nav class="nav-menu">
-              <ul class="nav-menu__list d-flex text-bold">
+              <ul class="nav-menu__list d-lg-flex text-bold">
                 <li class="nav-menu__item">
-                  <a href="" class="nav-menu__link">Home</a>
+                  <a href="#" data-goto=".content-block__banner" class="nav-menu__link scroll-link">Home</a>
                 </li>
                 <li class="nav-menu__item">
-                  <a href="" class="nav-menu__link">About</a>
+                  <a href="#" data-goto=".content-block__about" class="nav-menu__link scroll-link">About</a>
                 </li>
                 <li class="nav-menu__item">
-                  <a href="" class="nav-menu__link">Services</a>
+                  <a href="#" data-goto=".content-block__services" class="nav-menu__link scroll-link">Services</a>
                 </li>
                 <li class="nav-menu__item">
-                  <a href="" class="nav-menu__link">Testimonials</a>
+                  <a href="#" data-goto=".content-block__testimonials" class="nav-menu__link scroll-link">Testimonials</a>
                 </li>
                 <li class="nav-menu__item uppercase">
                   <a href="../html/faq.html" class="nav-menu__link">FAQ</a>
@@ -358,10 +361,10 @@
           </div>
           <div class="col-12 col-sm gy-5 gy-sm-0">
             <ul class="footer-nav">
-              <li><a href="" class="underline-link">Home</a></li>
-              <li><a href="" class="underline-link">About</a></li>
-              <li><a href="" class="underline-link">Services</a></li>
-              <li><a href="" class="underline-link">Testimonials</a></li>
+              <li><a href="#" data-goto=".content-block__banner" class="scroll-link underline-link">Home</a></li>
+              <li><a href="#" data-goto=".content-block__about" class="scroll-link underline-link">About</a></li>
+              <li><a href="#" data-goto=".content-block__services" class="scroll-link underline-link">Services</a></li>
+              <li><a href="#" data-goto=".content-block__testimonials" class="scroll-link underline-link">Testimonials</a></li>
               <li>
                 <a href="../html/faq.html" class="uppercase underline-link"
                   >FAQ</a
@@ -392,10 +395,10 @@
               <p>Social</p>
               <div class="logo-list">
                 <a href="" class="socials-logo">
-                  <img src="../images/icons/facebook.svg" alt="FB logo"
+                  <img src="../images/icons/facebook.svg" alt="Facebook logo"
                 /></a>
                 <a href="" class="socials-logo">
-                  <img src="../images/icons/instagram.svg" alt="Inst logo"
+                  <img src="../images/icons/linkedin.svg" alt="Linkedin logo"
                 /></a>
               </div>
             </div>
@@ -413,5 +416,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/script.js"></script> 
   </body>
 </html>
