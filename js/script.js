@@ -1,6 +1,21 @@
+const burgerMenuIcon = document.querySelector(".burger-menu__icon");
+const navMenu = document.querySelector(".nav-menu");
+const logo = document.querySelector(".logo");
+const menuLinks = document.querySelectorAll(".scroll-link[data-goto]");
+
+//// BURGER MENU
+
+if (burgerMenuIcon) {
+  burgerMenuIcon.addEventListener("click", function () {
+    document.body.classList.toggle("_lock");
+    burgerMenuIcon.classList.toggle("_active");
+    navMenu.classList.toggle("_active");
+    logo.classList.toggle("_active");
+  });
+}
+
 /// SCROLL ON CLICK
 
-const menuLinks = document.querySelectorAll(".scroll-link[data-goto]");
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
     menuLink.addEventListener("click", onMenuLinkClick);
@@ -16,12 +31,12 @@ if (menuLinks.length > 0) {
         gotoBlock.getBoundingClientRect().top +
         scrollY -
         document.querySelector("header").offsetHeight;
-
-      if (burgerMenu.classList.contains("_active")) {
-        document.body.classList.toggle("_lock");
-        burgerMenu.classList.toggle("_active");
-        navMenu.classList.toggle("_active");
-        logo.classList.toggle("_active");
+      
+      if (burgerMenuIcon.classList.contains("_active")) {
+        document.body.classList.remove("_lock");
+        burgerMenuIcon.classList.remove("_active");
+        navMenu.classList.remove("_active");
+        logo.classList.remove("_active");
       }
 
       window.scrollTo({
@@ -33,17 +48,21 @@ if (menuLinks.length > 0) {
   }
 }
 
-//// BURGER MENU
+window.addEventListener("resize", resizeListener);
 
-const burgerMenu = document.querySelector(".burger-menu");
-const navMenu = document.querySelector(".nav-menu");
-const logo = document.querySelector(".logo");
+function resizeListener() {
+  if (window.innerWidth > 991 && logo.classList.contains("_active")) {
+    logo.style.color = "black";
+  } else if (window.innerWidth < 992 && logo.classList.contains("_active")) {
+    logo.style.color = "";
+  }
 
-if (burgerMenu) {
-  burgerMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle("_lock");
-    burgerMenu.classList.toggle("_active");
-    navMenu.classList.toggle("_active");
-    logo.classList.toggle("_active");
-  });
+  if (window.innerWidth > 991 && document.body.classList.contains("_lock")) {
+    document.body.style.overflow = "visible";
+  } else if (
+    window.innerWidth < 992 &&
+    document.body.classList.contains("_lock")
+  ) {
+    document.body.style.overflow = "";
+  }
 }
