@@ -8,12 +8,12 @@
   align-items: center;
   padding: 1.75em 0;
   transition: all 0.3s ease 0s;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .burger-menu {
   z-index: 15;
-  padding: 1rem 1.5rem 1rem 0;
+  margin-right: 1.5rem;
 }
 
 .logo {
@@ -47,7 +47,8 @@
 }
 
 .nav-menu__item {
-  margin-right: 1.875em;
+  padding: 0.2rem 0.4rem;
+  margin-right: 1.475em;
 }
 
 .phone-link {
@@ -77,6 +78,15 @@ body._lock {
 
 .burger-menu__icon {
   display: none;
+}
+
+._menu-active {
+  border: none;
+  border-radius: 0.125rem;
+  background-color: #d32f2f !important;
+  a {
+    color: white;
+  }
 }
 
 @media (max-width: 991px) {
@@ -143,6 +153,7 @@ body._lock {
     height: 6.625rem;
     transition: all 0.3s ease 0s;
     background-color: #d32f2f;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
   }
 
   .nav-menu._active::before {
@@ -151,7 +162,7 @@ body._lock {
     width: 50%;
     top: 0;
     left: 0;
-    height: 6.625rem;
+    height: 6.25rem;
     background-color: #d32f2f;
   }
 
@@ -173,7 +184,7 @@ body._lock {
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.8);
 
     .nav-menu__list {
-      margin-top: 6.25rem;
+      margin-top: 8.25rem;
     }
 
     .nav-menu__item {
@@ -191,32 +202,39 @@ body._lock {
 
 @media screen and (max-width: 575px) {
   .nav-menu._active::before {
-    height: 5.125rem;
+    height: 3.85rem;
   }
 
   .header {
-    
     padding: 1em 0;
   }
 
   .logo {
     font-size: 1rem;
   }
+
+  .nav-menu__list {
+    margin-top: 6.5rem !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
-   .nav-menu._active::before {
-    height: 3.875rem;
+  .nav-menu._active::before {
+    height: 3.4rem;
   }
 
   .header {
-    
     font-size: 0.875rem;
   }
 
-  .burger-menu {
-    padding: 0.5rem 0.5rem 0.5rem 0;
+  .nav-menu__list {
+    margin-top: 5.25rem !important;
   }
+
+  .burger-menu {
+    margin-right: 0.5rem;
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -226,7 +244,7 @@ body._lock {
     }
 
     &__item {
-      margin-right: 1.25rem;
+      margin-right: 0.825rem;
     }
   }
 }

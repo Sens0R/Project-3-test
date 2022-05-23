@@ -45,26 +45,26 @@
           <div class="col-auto d-lg-flex align-items-center">
             <nav class="nav-menu">
               <ul class="nav-menu__list d-lg-flex text-bold">
-                <li class="nav-menu__item">
-                  <a href="#" data-goto=".content-block__banner" class="nav-menu__link scroll-link">Home</a>
+                <li class="nav-menu__item section-home _menu-active">
+                  <a href="#" data-goto=".content-block__home" class="nav-menu__link scroll-link">Home</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav-menu__item section-about">
                   <a href="#" data-goto=".content-block__about" class="nav-menu__link scroll-link">About</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav-menu__item section-services">
                   <a href="#" data-goto=".content-block__services" class="nav-menu__link scroll-link">Services</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav-menu__item section-testimonials">
                   <a href="#" data-goto=".content-block__testimonials" class="nav-menu__link scroll-link">Testimonials</a>
                 </li>
-                <li class="nav-menu__item uppercase">
+                <li class="nav-menu__item uppercase section-faq">
                   <a href="#" data-goto=".content-block__faq" class="nav-menu__link scroll-link">FAQ</a>
                 </li>
                 <li class="nav-menu__item">
                   <a href="../html/news.html" class="nav-menu__link">News</a>
                 </li>
-                <li class="nav-menu__item">
-                  <a href="../html/contact-us.html" class="nav-menu__link"
+                <li class="nav-menu__item section-contact">
+                  <a href="#" data-goto=".content-block__contact-us" class="nav-menu__link scroll-link"
                     >Contact</a
                   >
                 </li>
@@ -89,7 +89,7 @@
     </header>
     <main>
       <div
-        class="content-block__banner banner d-flex justify-content-center align-items-center"
+        id="section-home" class="section content-block__home home d-flex justify-content-center align-items-center"
       >
         <div class="container">
           <div class="row d-flex justify-content-center">
@@ -110,7 +110,7 @@
         </div>
       </div>
       <div
-        class="content-block__about about d-flex justify-content-center align-items-center"
+      id="section-about" class="section content-block__about about d-flex justify-content-center align-items-center"
       >
         <div class="container-fluid container-xxl">
           <div
@@ -135,7 +135,7 @@
         </div>
       </div>
       <div
-        class="content-block__services services d-flex justify-content-center align-items-center"
+      id="section-services" class="section content-block__services services d-flex justify-content-center align-items-center"
       >
         <div class="container-fluid container-xxl spacer-top">
           <div class="row">
@@ -201,7 +201,7 @@
         </div>
       </div>
       <div
-        class="content-block__testimonials testimonials d-flex justify-content-center align-items-center text-white"
+      id="section-testimonials" class="section content-block__testimonials testimonials d-flex justify-content-center align-items-center text-white"
       >
         <div class="container">
           <div
@@ -241,7 +241,7 @@
         </div>
       </div>
       <div
-        class="content-block__work-process work-process d-flex justify-content-center align-items-center"
+        class="section content-block__work-process work-process d-flex justify-content-center align-items-center"
       >
         <div class="container-fluid container-xxl spacer-top spacer-bottom">
           <div
@@ -269,7 +269,7 @@
           </div>
         </div>
       </div>
-      <div class="content-block__faq faq spacer-top spacer-bottom">
+      <div id="section-faq" class="section content-block__faq faq spacer-top spacer-bottom">
         <div
           class="container d-flex justify-content-center align-items-center faq__content"
         >
@@ -331,7 +331,7 @@
         </div>
       </div>
       <div
-        class="content-block__contact-us contact-us d-flex justify-content-center align-items-center"
+        id="section-contact" class="section content-block__contact-us contact-us d-flex justify-content-center align-items-center"
       >
         <div class="container">
           <div class="row d-flex justify-content-center">
@@ -372,7 +372,7 @@
                 <a href="../html/news.html" class="underline-link">News</a>
               </li>
               <li>
-                <a href="../html/contact-us.html" class="underline-link"
+                <a href="#" data-goto=".content-block__contact-us" class="scroll-link underline-link"
                   >Contact</a
                 >
               </li>

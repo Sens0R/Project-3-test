@@ -3,7 +3,31 @@ const navMenu = document.querySelector(".nav-menu");
 const logo = document.querySelector(".logo");
 const menuLinks = document.querySelectorAll(".scroll-link[data-goto]");
 
-//// BURGER MENU
+const sections = document.querySelectorAll(".section");
+const navMenuItem = document.querySelectorAll(".nav-menu__item");
+
+/// NAV MENU HIGHLIGHT ///
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+   
+    const sectionHeight = section.clientHeight;
+    
+    if (scrollY > sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+    
+    navMenuItem.forEach((li) => {
+      li.classList.remove("_menu-active");
+      if (li.classList.contains(current)) {
+        li.classList.add("_menu-active");
+      }
+    });
+  });
+});
+
+/// BURGER MENU ///
 
 if (burgerMenuIcon) {
   burgerMenuIcon.addEventListener("click", function () {
@@ -14,7 +38,7 @@ if (burgerMenuIcon) {
   });
 }
 
-/// SCROLL ON CLICK
+/// SCROLL ON CLICK ////
 
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
@@ -31,7 +55,7 @@ if (menuLinks.length > 0) {
         gotoBlock.getBoundingClientRect().top +
         scrollY -
         document.querySelector("header").offsetHeight;
-      
+
       if (burgerMenuIcon.classList.contains("_active")) {
         document.body.classList.remove("_lock");
         burgerMenuIcon.classList.remove("_active");
