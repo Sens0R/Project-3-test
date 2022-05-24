@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Joseph Rose</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid container-xxl">
+        <div class="row gx-0 gy-2">
+          <div class="col-auto d-flex align-items-center">
+            <div
+              class="col-auto d-flex d-lg-none align-items-center burger-menu"
+            >
+              <div class="burger-menu__icon">
+                <span></span>
+              </div>
+            </div>
+            <div class="logo">Joseph Rose.</div>
+          </div>
+          <div class="col-auto d-lg-flex align-items-center">
+            <nav class="nav-menu">
+              <ul class="nav-menu__list d-lg-flex text-bold">
+                <li class="nav-menu__item section-home">
+                  <a
+                    href="../html/index.html"
+                    data-goto=".content-block__home"
+                    class="nav-menu__link scroll-link"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-menu__item section-about">
+                  <a
+                    href="../html/index.html"
+                    data-goto=".content-block__about"
+                    class="nav-menu__link scroll-link"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-menu__item section-services">
+                  <a
+                    href="../html/index.html"
+                    data-goto=".content-block__services"
+                    class="nav-menu__link scroll-link"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-menu__item section-testimonials">
+                  <a
+                    href="../html/index.html"
+                    data-goto=".content-block__testimonials"
+                    class="nav-menu__link scroll-link"
+                    >Testimonials</a
+                  >
+                </li>
+                <li class="nav-menu__item uppercase section-faq">
+                  <a
+                    href="../html/faq.html"
+                    data-goto=".content-block__faq"
+                    class="nav-menu__link scroll-link"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="nav-menu__item">
+                  <a href="../html/news.html" class="nav-menu__link">News</a>
+                </li>
+                <li class="nav-menu__item section-contact _menu-active">
+                  <a
+                    href="#"
+                    data-goto=".content-block__contact-us"
+                    class="nav-menu__link scroll-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="col contact d-flex align-items-center justify-content-end"
+          >
+            <a href="tel:0414365222" class="phone-link text-bold">
+              <span class="material-icons phone-link__phone-call-icon">
+                call </span
+              >0414365222</a
+            ><a
+              href="../html/contact-us.html"
+              class="btn btn-animation contact-btn d-none d-sm-block"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div
+        class="section content-block__contact-us-banner contact-us-banner text-center d-flex justify-content-center align-items-center"
+      >
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-6">
+              <div class="main-content spacer-top spacer-bottom text-white">
+                <h2>Contact us</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section content-block__contact-us-address contact-us-address">
+        <div class="container-fluid container-xxl spacer-top spacer-bottom">
+          <div
+            class="row d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="col-12 col-sm-4 col-md-4 col-lg-4 contact-us-address__text-content"
+            >
+              <div class="container g-0">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="contact-us-address__item">
+                      <p class="text-small-bold">Phone</p>
+                      <a
+                        href="tel:0414365222"
+                        class="contact-us-address__link underline-link"
+                      >
+                        0414365222
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="contact-us-address__item">
+                      <p class="text-small-bold">Email</p>
+                      <a
+                        href="mailto:josephroselaw.com.au"
+                        class="contact-us-address__link underline-link"
+                      >
+                        josephroselaw.com.au
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="contact-us-address__item">
+                      <p class="text-small-bold">Address</p>
+                      <a
+                        href="#"
+                        class="contact-us-address__link underline-link"
+                      >
+                        Lorem Ipsum 34
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+              <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1403.8565898360257!2d145.04825386495182!3d-37.823975322255485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63aeb872472d9%3A0x77ae72eec97fa98e!2sSeriously%20Good%20Design!5e0!3m2!1sen!2sua!4v1653401927491!5m2!1sen!2sua"
+                  width="100%"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer spacer-top spacer-bottom-small">
+      <div class="container-fluid container-xxl">
+        <div class="row spacer-bottom">
+          <div class="col-12 col-sm">
+            <div class="logo logo--white">Joseph Rose.</div>
+          </div>
+          <div class="col-12 col-sm gy-5 gy-sm-0">
+            <ul class="footer-nav">
+              <li>
+                <a
+                  href="../html/index.html"
+                  data-goto=".content-block__banner"
+                  class="scroll-link underline-link"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../html/index.html"
+                  data-goto=".content-block__about"
+                  class="scroll-link underline-link"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../html/index.html"
+                  data-goto=".content-block__services"
+                  class="scroll-link underline-link"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../html/index.html"
+                  data-goto=".content-block__testimonials"
+                  class="scroll-link underline-link"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../html/faq.html"
+                  data-goto=".content-block__faq"
+                  class="scroll-link uppercase underline-link"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="../html/news.html" class="underline-link">News</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-goto=".content-block__contact-us"
+                  class="scroll-link underline-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm gy-5 gy-sm-0">
+            <div class="socials-item">
+              <p>Phone</p>
+              <a href="tel:0414365222" class="underline-link"> 0414365222 </a>
+            </div>
+            <div class="socials-item">
+              <p>Email</p>
+              <a href="mailto:josephroselaw.com.au" class="underline-link">
+                josephroselaw.com.au
+              </a>
+            </div>
+            <div class="socials-item">
+              <p>Social</p>
+              <ul class="socials-list">
+                <li class="socials-list__item">
+                  <a href="#" class="socials-list__link">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      class="socials-list__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.2435 0.0024968L7.68737 0C5.93911 0 4.80931 1.15914 4.80931 2.95322V4.31485H3.24469C3.10948 4.31485 3 4.42446 3 4.55966V6.53251C3 6.66771 3.10961 6.77719 3.24469 6.77719H4.80931V11.7553C4.80931 11.8905 4.91879 12 5.05399 12H7.09538C7.23058 12 7.34007 11.8904 7.34007 11.7553V6.77719H9.16947C9.30467 6.77719 9.41416 6.66771 9.41416 6.53251L9.41491 4.55966C9.41491 4.49474 9.38907 4.43257 9.34325 4.38663C9.29743 4.34069 9.23501 4.31485 9.1701 4.31485H7.34007V3.16058C7.34007 2.60579 7.47227 2.32415 8.19497 2.32415L9.24325 2.32377C9.37833 2.32377 9.48781 2.21416 9.48781 2.07909V0.247183C9.48781 0.112231 9.37845 0.00274648 9.2435 0.0024968Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-list__item">
+                  <a href="#" class="socials-list__link">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      class="socials-list__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.50024 0C2.3144 0 3 0.685594 3 1.49975C3 2.35674 2.27154 3.02093 1.50024 2.9995C0.707517 3.02093 0.000489141 2.35674 0.000489141 1.49975C-0.0209418 0.664163 0.664679 0 1.50024 0Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M2.50003 12H0.5C0.225007 12 0 11.8154 0 11.5897V4.41025C0 4.18462 0.2 4 0.474993 4H2.5C2.77499 4 3 4.18462 3 4.41025V11.6103C3.00003 11.8154 2.77502 12 2.50003 12Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M11.979 6.63999C11.979 5.16 10.8242 4 9.27036 4H8.82942C7.98953 4 7.17063 4.37999 6.72968 5C6.58271 5.13999 6.5197 5.20001 6.5197 5.20001V4.40002C6.5197 4.32002 6.39371 4.20001 6.30972 4.20001H4.20998C4.12599 4.20001 4 4.28001 4 4.38001V11.84C4 11.92 4.12599 12 4.20998 12H6.51968C6.60367 12 6.72966 11.92 6.72966 11.84V7.51998C6.72966 6.77999 7.31758 6.15998 8.09448 6.13999C8.49342 6.13999 8.85037 6.27999 9.12334 6.53999C9.37531 6.77999 9.4803 7.11999 9.4803 7.49998V11.8C9.4803 11.88 9.60629 12 9.69028 12H11.79C11.874 12 12 11.88 12 11.8V6.63999H11.979Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row text-small">
+          <div class="col">
+            <p class="no-margin">Copyright © 2020</p>
+          </div>
+          <div class="col d-flex align-items-center justify-content-end">
+            <p class="no-margin">
+              website by <span class="text-white">SGD</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

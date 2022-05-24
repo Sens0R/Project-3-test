@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-   
+    
     const sectionHeight = section.clientHeight;
     
     if (scrollY > sectionTop - sectionHeight / 3) {
@@ -90,3 +90,4 @@ function resizeListener() {
     document.body.style.overflow = "";
   }
 }
+

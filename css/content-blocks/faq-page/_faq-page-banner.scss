@@ -1,0 +1,9 @@
+.faq-banner {
+  background: $color-overlay, url(../images/content/faq/faq-banner.jpg), $color-secondary;
+  background-size: cover;
+  background-position: center; 
+}
+
+.faq-page-item {
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
