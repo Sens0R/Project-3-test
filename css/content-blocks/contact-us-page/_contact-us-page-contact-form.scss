@@ -1,0 +1,19 @@
+.contact-us-contact-form {
+  background-color: $color-main;
+}
+
+.form-body {
+  padding: 1.5rem 0;
+  &__field {
+    padding-bottom: 1rem;
+  }
+  &__input {
+    min-height: 2.875rem;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.big-input {
+  height: 13.75rem;;
+}

@@ -1,27 +1,24 @@
 .contact-us-address {
   &__item {
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     p {
       margin: 0;
     }
-    
   }
-  
+
   &__link {
     color: red;
-    
   }
   &__link:hover {
     color: red;
-    
   }
 }
 
 
 
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-us-address__text-content {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
+

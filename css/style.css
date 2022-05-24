@@ -507,7 +507,7 @@ body._lock {
 }
 
 .about {
-  background: #e9f9ff;
+  background: rgb(227, 237, 240);
 }
 @media (max-width: 768px) {
   .about__text-content {
@@ -607,7 +607,7 @@ body._lock {
 }
 
 .work-process {
-  background: #e9f9ff;
+  background: rgb(227, 237, 240);
 }
 @media (max-width: 1199px) {
   .work-process__text-content {
@@ -652,11 +652,31 @@ body._lock {
   color: red;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-us-address__text-content {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
+.contact-us-contact-form {
+  background-color: rgb(227, 237, 240);
+}
+
+.form-body {
+  padding: 1.5rem 0;
+}
+.form-body__field {
+  padding-bottom: 1rem;
+}
+.form-body__input {
+  min-height: 2.875rem;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.big-input {
+  height: 13.75rem;
+}
+
 .faq-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/faq/faq-banner.jpg), #263041;
   background-size: cover;
