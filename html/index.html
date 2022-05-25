@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Joseph Rose</title>
   </head>
-  <body>
+  <body class="preload">
     <header class="header">
       <div class="container-fluid container-xxl">
         <div class="row gx-0 gy-2">
@@ -43,42 +43,21 @@
             <nav class="nav-menu">
               <ul class="nav-menu__list d-lg-flex text-bold">
                 <li class="nav-menu__item section-home _menu-active">
-                  <a
-                    href="#"
-                    data-goto=".content-block__home"
-                    class="nav-menu__link scroll-link"
-                    >Home</a
-                  >
+                  <a href="#" class="nav-menu__link scroll-link">Home</a>
                 </li>
                 <li class="nav-menu__item section-about">
-                  <a
-                    href="#"
-                    data-goto=".content-block__about"
-                    class="nav-menu__link scroll-link"
-                    >About</a
-                  >
+                  <a href="#" class="nav-menu__link scroll-link">About</a>
                 </li>
                 <li class="nav-menu__item section-services">
-                  <a
-                    href="#"
-                    data-goto=".content-block__services"
-                    class="nav-menu__link scroll-link"
-                    >Services</a
-                  >
+                  <a href="#" class="nav-menu__link scroll-link">Services</a>
                 </li>
                 <li class="nav-menu__item section-testimonials">
-                  <a
-                    href="#"
-                    data-goto=".content-block__testimonials"
-                    class="nav-menu__link scroll-link"
+                  <a href="#" class="nav-menu__link scroll-link"
                     >Testimonials</a
                   >
                 </li>
                 <li class="nav-menu__item uppercase section-faq">
-                  <a
-                    href="#"
-                    data-goto=".content-block__faq"
-                    class="nav-menu__link scroll-link"
+                  <a href="../html/faq.html" class="nav-menu__link scroll-link"
                     >FAQ</a
                   >
                 </li>
@@ -87,8 +66,7 @@
                 </li>
                 <li class="nav-menu__item section-contact">
                   <a
-                    href="#"
-                    data-goto=".content-block__contact-us"
+                    href="../html/contact-us.html"
                     class="nav-menu__link scroll-link"
                     >Contact</a
                   >
@@ -114,7 +92,6 @@
     </header>
     <main>
       <div
-        id="section-home"
         class="section content-block__home home d-flex justify-content-center align-items-center"
       >
         <div class="container">
@@ -136,8 +113,7 @@
         </div>
       </div>
       <div
-        id="section-about"
-        class="section content-block__about about d-flex justify-content-center align-items-center"
+        class="section content-block__about about d-flex justify-content-center align-items-center color-background-accent"
       >
         <div class="container-fluid container-xxl">
           <div
@@ -162,7 +138,6 @@
         </div>
       </div>
       <div
-        id="section-services"
         class="section content-block__services services d-flex justify-content-center align-items-center"
       >
         <div class="container-fluid container-xxl spacer-top">
@@ -229,7 +204,6 @@
         </div>
       </div>
       <div
-        id="section-testimonials"
         class="section content-block__testimonials testimonials d-flex justify-content-center align-items-center text-white"
       >
         <div class="container">
@@ -270,7 +244,7 @@
         </div>
       </div>
       <div
-        class="section content-block__work-process work-process d-flex justify-content-center align-items-center"
+        class="section content-block__work-process work-process d-flex justify-content-center align-items-center color-background-accent"
       >
         <div class="container-fluid container-xxl spacer-top spacer-bottom">
           <div
@@ -298,10 +272,7 @@
           </div>
         </div>
       </div>
-      <div
-        id="section-faq"
-        class="section content-block__faq faq spacer-top spacer-bottom"
-      >
+      <div class="section content-block__faq faq spacer-top spacer-bottom">
         <div
           class="container d-flex justify-content-center align-items-center faq__content"
         >
@@ -363,7 +334,6 @@
         </div>
       </div>
       <div
-        id="section-contact"
         class="section content-block__contact-us contact-us text-center d-flex justify-content-center align-items-center"
       >
         <div class="container">
@@ -393,41 +363,20 @@
           <div class="col-12 col-sm gy-5 gy-sm-0">
             <ul class="footer-nav">
               <li>
-                <a
-                  href="#"
-                  data-goto=".content-block__banner"
-                  class="scroll-link underline-link"
-                  >Home</a
-                >
+                <a href="#" class="scroll-link underline-link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="scroll-link underline-link">About</a>
+              </li>
+              <li>
+                <a href="#" class="scroll-link underline-link">Services</a>
+              </li>
+              <li>
+                <a href="#" class="scroll-link underline-link">Testimonials</a>
               </li>
               <li>
                 <a
-                  href="#"
-                  data-goto=".content-block__about"
-                  class="scroll-link underline-link"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-goto=".content-block__services"
-                  class="scroll-link underline-link"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-goto=".content-block__testimonials"
-                  class="scroll-link underline-link"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-goto=".content-block__faq"
+                  href="../html/faq.html"
                   class="scroll-link uppercase underline-link"
                   >FAQ</a
                 >
@@ -436,12 +385,7 @@
                 <a href="../html/news.html" class="underline-link">News</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  data-goto=".content-block__contact-us"
-                  class="scroll-link underline-link"
-                  >Contact</a
-                >
+                <a href="#" class="scroll-link underline-link">Contact</a>
               </li>
             </ul>
           </div>

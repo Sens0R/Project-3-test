@@ -6,6 +6,12 @@
 @import "content-blocks/import-content-blocks";
 
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+} 
 
 
 

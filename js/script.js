@@ -1,30 +1,10 @@
 const burgerMenuIcon = document.querySelector(".burger-menu__icon");
 const navMenu = document.querySelector(".nav-menu");
 const logo = document.querySelector(".logo");
-const menuLinks = document.querySelectorAll(".scroll-link[data-goto]");
 
-const sections = document.querySelectorAll(".section");
-const navMenuItem = document.querySelectorAll(".nav-menu__item");
-
-/// NAV MENU HIGHLIGHT ///
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    
-    const sectionHeight = section.clientHeight;
-    
-    if (scrollY > sectionTop - sectionHeight / 3) {
-      current = section.getAttribute("id");
-    }
-    
-    navMenuItem.forEach((li) => {
-      li.classList.remove("_menu-active");
-      if (li.classList.contains(current)) {
-        li.classList.add("_menu-active");
-      }
-    });
-  });
+/// REMOVE TRANSITIONS ON LOADING ///
+window.addEventListener('load', (event) => {
+  document.body.classList.remove("preload")
 });
 
 /// BURGER MENU ///
@@ -36,40 +16,6 @@ if (burgerMenuIcon) {
     navMenu.classList.toggle("_active");
     logo.classList.toggle("_active");
   });
-}
-
-/// SCROLL ON CLICK ////
-
-if (menuLinks.length > 0) {
-  menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener("click", onMenuLinkClick);
-  });
-  function onMenuLinkClick(e) {
-    const menuLink = e.target;
-    if (
-      menuLink.dataset.goto &&
-      document.querySelector(menuLink.dataset.goto)
-    ) {
-      const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue =
-        gotoBlock.getBoundingClientRect().top +
-        scrollY -
-        document.querySelector("header").offsetHeight;
-
-      if (burgerMenuIcon.classList.contains("_active")) {
-        document.body.classList.remove("_lock");
-        burgerMenuIcon.classList.remove("_active");
-        navMenu.classList.remove("_active");
-        logo.classList.remove("_active");
-      }
-
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: "smooth",
-      });
-      e.preventDefault();
-    }
-  }
 }
 
 window.addEventListener("resize", resizeListener);

@@ -1,7 +1,15 @@
 /*--------------------------------------------------------------
 # Import
 --------------------------------------------------------------*/
+/* $color-main: ; */
+/* $color-main-dark: darken($color-main, 60%);
+$color-main-light: lighten($color-main, 10%); */
+/* $color-border: rgba($color-main-dark, 0.25); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Volkhov:wght@700&display=swap");
+.color-background-accent {
+  background-color: rgb(227, 237, 240);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -517,9 +525,6 @@ body._lock {
   }
 }
 
-.about {
-  background: rgb(227, 237, 240);
-}
 @media (max-width: 768px) {
   .about__text-content {
     padding-top: 0;
@@ -617,9 +622,6 @@ body._lock {
   background-position: center;
 }
 
-.work-process {
-  background: rgb(227, 237, 240);
-}
 @media (max-width: 1199px) {
   .work-process__text-content {
     padding-top: 4rem;
@@ -668,10 +670,6 @@ body._lock {
     padding-bottom: 2rem;
   }
 }
-.contact-us-contact-form {
-  background-color: rgb(227, 237, 240);
-}
-
 .form-body {
   padding: 1.5rem 0;
 }
@@ -757,6 +755,13 @@ body._lock {
 }
 .blog-post-content__main p:last-child {
   margin-bottom: 0;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

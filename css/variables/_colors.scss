@@ -1,12 +1,16 @@
-$color-main: rgb(227, 237, 240);
+/* $color-main: ; */
 $color-secondary: #263041;
-$color-main-dark: darken($color-main, 60%);
-$color-main-light: lighten($color-main, 10%);
+/* $color-main-dark: darken($color-main, 60%);
+$color-main-light: lighten($color-main, 10%); */
 $color-dark: #242222;
 $color-white: #ffffff;
 $color-error: #f44336;
 $color-success: #0f834d;
 $color-warning: #fff4dd;
-$color-border: rgba($color-main-dark, .25);
+/* $color-border: rgba($color-main-dark, 0.25); */
 $color-accent: lighten($color-secondary, 10%);
 $color-overlay: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+.color-background-accent {
+  background-color: rgb(227, 237, 240);
+}
