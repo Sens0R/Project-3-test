@@ -755,5 +755,8 @@ body._lock {
 .blog-post-content__main p {
   margin: 2rem 0;
 }
+.blog-post-content__main p:last-child {
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
