@@ -1,0 +1,19 @@
+.blog-post-banner {
+  background: $color-overlay, url(../images/content/news/news-single-banner.jpg),
+    $color-secondary;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.blog-post-single {
+  margin-bottom: 2rem;
+  &__link {
+    font-weight: bold;
+    color: white;
+  }
+  &__date {
+    opacity: 0.6;
+  }
+}
+
