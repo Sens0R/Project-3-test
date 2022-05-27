@@ -1,10 +1,6 @@
 /*--------------------------------------------------------------
 # Import
 --------------------------------------------------------------*/
-/* $color-main: ; */
-/* $color-main-dark: darken($color-main, 60%);
-$color-main-light: lighten($color-main, 10%); */
-/* $color-border: rgba($color-main-dark, 0.25); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Volkhov:wght@700&display=swap");
 .color-background-accent {
   background-color: rgb(227, 237, 240);
@@ -538,7 +534,7 @@ body._lock {
 }
 
 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/banner.jpg), #263041;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/banner.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -583,7 +579,7 @@ body._lock {
 }
 
 .testimonials {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/testimonials/background.jpg), #263041;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/testimonials/background.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -634,7 +630,7 @@ body._lock {
   }
 }
 .contact-us {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/banner.jpg), #263041;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/banner.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -664,7 +660,7 @@ body._lock {
 }
 
 .contact-us-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/contact-us/contact-us-banner.jpg), #263041;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/contact-us/contact-us-banner.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -701,7 +697,7 @@ body._lock {
 }
 
 .faq-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/faq/faq-banner.jpg), #263041;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/content/faq/faq-banner.jpg);
   background-size: cover;
   background-position: center;
 }

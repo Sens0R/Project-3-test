@@ -15,6 +15,8 @@ if (burgerMenuIcon) {
     burgerMenuIcon.classList.toggle("_active");
     navMenu.classList.toggle("_active");
     logo.classList.toggle("_active");
+    const carouselNav = document.querySelector(".carousel-nav");
+    carouselNav.classList.toggle("d-none")
   });
 }
 
