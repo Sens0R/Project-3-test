@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   padding: 1.75em 0;
-  transition: all 0.3s ease 0s; 
+  transition: all 0.3s ease 0s;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -84,6 +84,10 @@ body._lock {
   border: none;
   border-radius: 0.125rem;
   background-color: #d32f2f !important;
+  :hover {
+    text-decoration: none;
+  }
+
   a {
     color: white;
   }
@@ -234,7 +238,6 @@ body._lock {
   .burger-menu {
     margin-right: 0.5rem;
   }
-  
 }
 
 @media screen and (max-width: 1200px) {

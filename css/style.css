@@ -333,6 +333,9 @@ body._lock {
   border-radius: 0.125rem;
   background-color: #d32f2f !important;
 }
+._menu-active :hover {
+  text-decoration: none;
+}
 ._menu-active a {
   color: white;
 }
@@ -684,8 +687,8 @@ body._lock {
     padding-bottom: 2rem;
   }
 }
-.form-body {
-  padding: 1.5rem 0;
+.form-body h3 {
+  margin-bottom: 1.25rem;
 }
 .form-body__field {
   padding-bottom: 1rem;
@@ -694,10 +697,7 @@ body._lock {
   min-height: 2.875rem;
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.big-input {
-  height: 13.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .faq-banner {
