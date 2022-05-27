@@ -1,16 +1,21 @@
-.swiper {
- height: 36.25rem;
-  
+.swiper-pagination {
+  position: static !important;
+  width: auto !important;
+  margin: 0 1rem;
 }
 
- .swiper-slide {
-  object-fit: cover;
-} 
+.swiper-pagination-fraction {
+  font-weight: bold;
+}
 
 .swiper-btn {
+  opacity: 0.75;
   position: static !important;
   margin: 0 !important;
   width: 50px !important;
   height: 50px !important;
 }
 
+.swiper-btn:hover {
+  opacity: 1;
+}
