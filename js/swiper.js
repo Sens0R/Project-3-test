@@ -3,6 +3,8 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: false,
   allowTouchMove: false,
+  speed: 1000,
+  
 
   // If we need pagination
   pagination: {
@@ -19,5 +21,14 @@ const swiper = new Swiper(".swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+  },
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  autoplay: {
+    delay: 5000,
   },
 });

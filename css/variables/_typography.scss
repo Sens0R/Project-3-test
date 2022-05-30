@@ -11,7 +11,6 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: $font-secondary;
   margin-bottom: 1rem;
 }
@@ -19,7 +18,6 @@ h1 {
 h2 {
   font-size: 2.4375rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: $font-secondary;
   margin-bottom: 1rem;
 }
@@ -27,7 +25,6 @@ h2 {
 h3 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: $font-secondary;
   margin-bottom: 1rem;
 }
@@ -35,7 +32,6 @@ h3 {
 h4 {
   font-size: 1.5625rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: $font-secondary;
   margin-bottom: 1rem;
 }
@@ -43,7 +39,6 @@ h4 {
 h5 {
   font-size: 1.25rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: $font-secondary;
   margin-bottom: 1rem;
 }
@@ -51,7 +46,6 @@ h5 {
 h6 {
   font-size: 0.875rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: $font-secondary;
   margin-bottom: 1rem;
 }
@@ -98,7 +92,7 @@ a:hover {
   margin: 0;
 }
 
-////////////////////////// MEDIA ////////////////////////////////////// 
+////////////////////////// MEDIA //////////////////////////////////////
 @media screen and (max-width: 320px) {
   h5 {
     font-size: 1rem;

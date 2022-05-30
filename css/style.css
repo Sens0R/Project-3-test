@@ -14,7 +14,6 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: "Volkhov", serif;
   margin-bottom: 1rem;
 }
@@ -22,7 +21,6 @@ h1 {
 h2 {
   font-size: 2.4375rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: "Volkhov", serif;
   margin-bottom: 1rem;
 }
@@ -30,7 +28,6 @@ h2 {
 h3 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: "Volkhov", serif;
   margin-bottom: 1rem;
 }
@@ -38,7 +35,6 @@ h3 {
 h4 {
   font-size: 1.5625rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: "Volkhov", serif;
   margin-bottom: 1rem;
 }
@@ -46,7 +42,6 @@ h4 {
 h5 {
   font-size: 1.25rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: "Volkhov", serif;
   margin-bottom: 1rem;
 }
@@ -54,7 +49,6 @@ h5 {
 h6 {
   font-size: 0.875rem;
   font-weight: bold;
-  line-height: 1.1;
   font-family: "Volkhov", serif;
   margin-bottom: 1rem;
 }
@@ -241,6 +235,54 @@ li {
 
 .swiper-btn:hover {
   opacity: 1;
+}
+
+.accordion h5 {
+  margin: 0;
+  text-align: left;
+}
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.6s;
+}
+.accordion__content p {
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.accordion__button {
+  display: flex;
+  padding: 1.5rem 0;
+  width: 100%;
+  border: none;
+  background: none;
+}
+.accordion__button--active .accordion__button-icon:before {
+  transition: all 0.4s ease-in-out;
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordion__button--active .accordion__button-icon:after {
+  transition: all 0.4s ease-in-out;
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordion__button-icon {
+  margin: 0.5rem 1.5rem 0 1rem;
+}
+.accordion__button-icon:before, .accordion__button-icon:after {
+  content: "";
+  position: absolute;
+  background-color: #d32f2f;
+  width: 3px;
+  height: 9px;
+}
+.accordion__button-icon:before {
+  transition: all 0.4s ease-in-out;
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+.accordion__button-icon:after {
+  transition: all 0.4s ease-in-out;
+  transform: translate(2px, 0) rotate(45deg);
 }
 
 .header {
@@ -589,35 +631,14 @@ body._lock {
   text-align: center;
   margin-bottom: 4rem;
 }
-.faq__content h5 {
-  margin: 0;
-  padding: 1.5rem 0;
-}
-.faq__content h5 img {
-  padding-right: 0.5em;
-}
-.faq__content h5:last-child {
-  border-bottom: none;
-}
 .faq__content .btn {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .faq__item {
   border-bottom: 1px solid rgb(182, 182, 182);
 }
-.faq__item p {
-  display: none;
-}
-
-.faq__item:hover {
-  cursor: pointer;
-}
-.faq__item:hover p {
-  display: block;
-}
-
-.item-last {
+.faq__item:last-child {
   border-bottom: none;
 }
 
