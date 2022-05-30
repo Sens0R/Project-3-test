@@ -2,6 +2,7 @@ const burgerMenuIcon = document.querySelector(".burger-menu__icon");
 const navMenu = document.querySelector(".nav-menu");
 const logo = document.querySelector(".logo");
 const accordionButton = document.querySelectorAll(".accordion__button");
+
 /// ACCORDION ///
 const accordionButtons = document
   .querySelectorAll(".accordion__button")

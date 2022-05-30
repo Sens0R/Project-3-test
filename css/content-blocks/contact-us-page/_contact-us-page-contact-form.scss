@@ -8,8 +8,11 @@
   &__input {
     min-height: 2.875rem;
     width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 1.25rem;
-  }
+    &:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    }
 }
-
+}
